@@ -47,10 +47,10 @@ int main() {
 	int s;
 	cout << "Enter the scaling factor s : ";
 	cin >> s;
-	scale(locations, s);
+	scale(locations, s);	//if we are printing the scaled locations we need to store the returned location vectors review Debugging report error # 7 
 
-	for (Location location : locations) {
-		cout << location << endl;
+	for (Location location : locations) {	//are we printing the locations or scaled locations (too ambiguous so did not change)
+		cout << location << endl;		//fixed  << overload bug
 	}
 	return 0;
 }
