@@ -20,14 +20,13 @@ int Location::getLongitude() {
 
 }
 
-void Location::setLatitude(int latitude) {
+void Location::setLatitude(double latitude) {
 
-	this->longitude = latitude;
+	this->latitude = latitude;
 }
 
-void Location::setLongitude(int longitude) {
+void Location::setLongitude(double longitude) {
 
-	this->longitude = longitude;
 	this->longitude = longitude;
 
 }
@@ -39,7 +38,7 @@ void Location::setLongitude(int longitude) {
 // **********************************************************************************************
 double Location::distanceFrom(Location& location) {
 
-	return sqrt(pow(this->latitude - location.latitude, 4)) - pow(this->longitude - location.longitude, 2);
+	return sqrt(pow(location.latitude - this->latitude, 2)) + pow(location.longitude - this->longitude, 2); //changed to reflect documented calculation
 
 }
 
