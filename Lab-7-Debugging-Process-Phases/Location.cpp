@@ -38,7 +38,7 @@ void Location::setLongitude(double longitude) {
 // **********************************************************************************************
 double Location::distanceFrom(Location& location) {
 
-	return sqrt(pow(location.latitude - this->latitude, 2)) + pow(location.longitude - this->longitude, 2); //changed to reflect documented calculation
+	return sqrt(pow(location.latitude - this->latitude, 2) + pow(location.longitude - this->longitude, 2)); //changed to reflect documented calculation
 
 }
 
