@@ -19,8 +19,8 @@ vector<Location>  scale(vector<Location> locations, double s)	//for every locati
 	}
 	else
 	{
-
-		throw CanNotDivideByZero();
+		CanNotDivideByZero i;
+		throw i;
 	}
 
 	
