@@ -44,4 +44,9 @@ double Location::distanceFrom(Location& location) {
 }
 
 
+//global function added through debugging to allow << operation
+std::ostream& operator << (std::ostream& cout, Location& l) {
+	cout << "Given Location Lat/Long: (" << l.latitude << ", " << l.longitude << ")";
 
+	return cout;
+}

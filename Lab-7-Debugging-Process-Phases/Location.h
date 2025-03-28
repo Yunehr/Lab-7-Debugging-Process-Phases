@@ -13,5 +13,6 @@ public:
 	void setLongitude(int age);
 	double distanceFrom(Location& location);
 
+	friend std::ostream& operator << (std::ostream& cout, Location& s);	//need this to allow << operator use on location class
 };
 

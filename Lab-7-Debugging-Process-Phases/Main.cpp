@@ -50,7 +50,7 @@ int main() {
 	scale(locations, s);
 
 	for (Location location : locations) {
-		cout << location << endl;
+		cout << location << endl;		//fixed  << bug
 	}
 	return 0;
 }
