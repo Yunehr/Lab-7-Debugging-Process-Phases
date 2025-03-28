@@ -10,7 +10,8 @@ Developer::Developer(int age) {
 Developer::Developer(Developer& rhs) {
 
 	cout << "A developer object is copied" << endl;
-	age = rhs.age;
+	this->age = new int;
+	*age = *(rhs.age);
 
 }
 
